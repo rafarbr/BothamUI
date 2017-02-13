@@ -29,6 +29,7 @@ open class BothamCustomView: UIView {
 #elseif os(OSX)
     view.autoresizingMask = [NSAutoresizingMaskOptions.ViewWidthSizable, NSAutoresizingMaskOptions.ViewHeightSizable]
 #endif
+        view.translatesAutoresizingMaskIntoConstraints = true
         addSubview(view)
     }
 
